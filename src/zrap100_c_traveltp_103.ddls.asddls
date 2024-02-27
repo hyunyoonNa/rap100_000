@@ -35,5 +35,5 @@ define root view entity ZRAP100_C_TRAVELTP_103
       MimeType,
       FileName,
       LocalLastChangedAt
- 
+
 }

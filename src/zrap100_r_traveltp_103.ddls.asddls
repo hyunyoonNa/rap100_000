@@ -19,12 +19,12 @@ define root view entity ZRAP100_R_TRAVELTP_103
       currency_code         as CurrencyCode,
       description           as Description,
       overall_status        as OverallStatus,
-      @Semantics.largeObject: { mimeType: 'MimeType',  //case-sensitive
-                                fileName: 'FileName',  //case-sensitive
-                                acceptableMimeTypes: ['image/png', 'image/jpeg'],
-                                contentDispositionPreference: #ATTACHMENT }
+      @Semantics.largeObject: { mimeType: 'MimeType',   //case-sensitive
+                              fileName: 'FileName',   //case-sensitive
+                              acceptableMimeTypes: ['image/png', 'image/jpeg'],
+                              contentDispositionPreference: #ATTACHMENT }
       attachment            as Attachment,
-      @Semantics.mimeType: true //다음에 오는 필드에 대해서 어떻게 활용할지 정의하는 것
+      @Semantics.mimeType: true
       mime_type             as MimeType,
       file_name             as FileName,
       @Semantics.user.createdBy: true
@@ -43,5 +43,4 @@ define root view entity ZRAP100_R_TRAVELTP_103
       _Agency,
       _OverallStatus,
       _Currency
-
 }
